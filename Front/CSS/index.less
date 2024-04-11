@@ -1,0 +1,395 @@
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+    .Body_Container {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 0vw;
+
+        .Left_Container {
+            width: 15%;
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+            background-color: #4E5D73;
+            position: relative;
+
+            .Web_Title {
+                width: 100%;
+                height: 5.2vw;
+                line-height: 5.2vw;
+                text-align: center;
+                font-weight: 1000;
+                font-size: 1.8vw;
+                color: white;
+            }
+
+            .Navigation_Container {
+                width: 100%;
+
+                li {
+                    width: 90%;
+                    padding-left: 5%;
+                    height: 3.9vw;
+                    line-height: 3.9vw;
+                    font-size: 1.1vw;
+                    // border-radius: 0.3vw;
+                    margin: 0.7vw auto;
+                    background-color: #FFFFFF;
+                    list-style-type: none;
+                    font-weight: 1000;
+                    border-radius: 0.3vw;
+                    cursor: pointer;
+                    transition: all .75s;
+
+                    &:hover {
+                        background-color: rgb(46, 46, 46);
+                        color: white;
+                    }
+                }
+            }
+
+            .UserInfo_Container {
+                width: 95%;
+                height: 6.5vw;
+                padding: 1vw 0vw;
+                border-radius: 1vw;
+                margin: 0 auto;
+                position: absolute;
+                bottom: 1vw;
+                background-color: white;
+                left: 50%;
+                transform: translateX(-50%);
+
+                .UserName {
+                    font-weight: 1000;
+                    height: 1.6vw;
+                    line-height: 1.6vw;
+                    color: rgb(24, 25, 32);
+                    text-align: center;
+                    font-size: 1.3vw;
+                }
+
+                .User_Id {
+                    width: 98%;
+                    margin-top: 1.6vw;
+                    color: rgb(158, 157, 157);
+                    text-align: center;
+                    height: 1.6vw;
+                    line-height: 1.6vw;
+                    font-size: 1vw;
+                    font-weight: 1000;
+                }
+            }
+        }
+
+        .Right_Container {
+            width: 82%;
+            padding-left: 3%;
+            height: 100%;
+            overflow-y: scroll;
+
+            display: inline-block;
+            background-color: #0A0A0A;
+
+            font-size: 0vw;
+
+            &::-webkit-scrollbar {
+                overflow: hidden;
+            }
+
+            .Images_Container {
+                width: 23%;
+                margin: 2vw 1%;
+
+                display: inline-block;
+                vertical-align: top;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 24.8vw;
+                    border-radius: 1vw;
+                    object-fit: contain;
+                }
+
+                .Script {
+                    width: 100%;
+                    margin: 0.7vw auto;
+                    color: #F2F2F2;
+                    font-size: 1vw;
+                    font-weight: 1000;
+                }
+
+                .UploadUserName {
+                    width: 100%;
+                    margin: 0.7vw auto;
+                    color: #F2F2F2;
+                    font-size: 0.8vw;
+                    font-weight: 1000;
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 1vw;
+                        // color:red;
+                        color: white;
+
+                        span {
+                            margin-left: 0.3vw;
+                            color: rgb(251, 251, 251);
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .PopUp_Container {
+            width: 60%;
+            position: absolute;
+            background-color: #0A0A0A;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 1vw;
+            // display: none;
+            display: block;
+            opacity: 0;
+            transition: all 1s;
+            overflow: hidden;
+            cursor: pointer;
+
+            .PopUp_Left {
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+
+                img {
+                    width: 100%;
+                    height: 38.7vw;
+                }
+            }
+
+            .PopUp_Right {
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+
+                .Delite_UserName {
+                    width: 80%;
+                    height: 3.9vw;
+                    line-height: 3.9vw;
+                    margin: 0 auto;
+                    font-size: 1.3vw;
+                    color: #F2F2F2;
+                    font-weight: 1000;
+                }
+
+                .Delite_Script {
+                    width: 80%;
+                    margin: 0 auto;
+                    font-size: 1vw;
+                    color: white;
+                    font-weight: 300;
+                }
+
+                .Comments_Container {
+                    width: 95%;
+                    padding: 4% 2.5%;
+                    height: 55vh;
+                    font-size: 0.9vw;
+                    overflow-y: scroll;
+
+                    &::-webkit-scrollbar {
+                        overflow: hidden;
+                    }
+
+                    .CommentsNumber {
+                        border-top: 0.1vw solid #333;
+                        padding-top: 1.3vw;
+                        font-size: 0.9vw;
+                        color: #888888;
+                        font-weight: 1000;
+                    }
+
+                    .Commets_Delite_Container {
+                        width: 90%;
+                        margin: 1vw auto;
+
+                        .TitleUser_Name {
+                            font-size: 0.9vw;
+                            color: rgb(176, 172, 172);
+                        }
+
+                        .TitleUser_Comments {
+                            font-size: 0.9vw;
+                            margin-top: 0.7vw;
+                            color: white;
+                        }
+
+                        .TitleUser_Date {
+                            width: 100%;
+                            margin-top: 0.7vw;
+                            font-size: 0.8vw;
+                            color: rgb(160, 160, 160);
+                            text-align: right;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+                .Control_Container {
+                    width: 95%;
+                    height: 2.6vw;
+
+                    margin: 0 2.5%;
+
+                    .Control_Left_Container {
+                        width: 70%;
+                        height: 100%;
+                        display: inline-block;
+                        vertical-align: middle;
+
+                        input {
+                            width: 100%;
+                            padding-left: 2%;
+                            height: 100%;
+                            background-color: #1B1B1B;
+                            border-radius: 0.7vw;
+                            color: white;
+                            outline: none;
+                            border: none;
+                        }
+
+                    }
+
+                    .Control_Right_Container {
+                        width: 25%;
+                        display: inline-block;
+                        vertical-align: middle;
+                        text-align: right;
+
+                        i {
+                            position: relative;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 1vw;
+                            // color:red;
+                            color: white;
+
+                            span {
+                                margin-left: 0.3vw;
+                                color: rgb(251, 251, 251);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .UploadAnImage_Container {
+            width: 1152px;
+            height: 80vh;
+            position: absolute;
+            background-color: #00000097;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 1vw;
+            font-size: 0vw;
+            display: none;
+
+            .Upload_Left_Container {
+                width: 50%;
+                height: 100%;
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                text-align: center;
+
+                .Add_Icon_Container {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateY(-50%) translateX(-50%);
+                    cursor: pointer;
+                    #UploadFileInput{
+                        display: none;
+                    }
+                    i {
+                        font-size: 3.9vw;
+                        color: white;
+                    }
+                }
+                img{
+                    width: 90%;
+                    height: 100%;
+                    border-top-left-radius: 1vw;
+                    border-bottom-left-radius: 1vw;
+                }
+
+            }
+
+            .Upload_Right_Container {
+                width: 50%;
+                height: 100%;
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                .Text{
+                    width: 100%;
+                    height: 6.5vw;
+                    line-height: 6.5vw;
+                    color: white;
+                    font-size: 1.3vw;
+                    font-weight: 1000;
+                    text-align: left;
+                }
+                textarea{
+                    width: 85%;
+                    padding: 2% 2.5%;
+                    height: 6.5vw !important;
+                    margin: 0 auto;
+                    border: none;
+                    outline: none;
+                    letter-spacing: 0vw;
+                    background-color: rgb(24, 24, 24);
+                    color: white;
+                    font-size: 1.2vw;
+                    resize: none;
+                    border-radius: 1vw;
+                }
+                .RedayButton_Container{
+                    width: 85%;
+                    padding: 2% 2.5%;
+                    height: 2vw;
+                    position: absolute;
+                    bottom: 2.6vw;
+                    line-height: 2vw;
+                    color: white;
+                    color: white;
+                    font-weight: 1000;
+                    font-size: 1.3vw;
+                    text-align: center;
+                    border-radius: 0.7vw;
+                    background-color:#4E5D73;
+                    cursor: pointer;
+                    transition: all 1s;
+                    &:hover{
+                        background-color: #0A0A0A;
+                    }
+                }
+            }
+        }
+    }
+}

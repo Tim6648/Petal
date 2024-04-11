@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    transition: all 1s;
+  }
+  
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    .PopUp_Container{
+      width: 70%;
+      height: 60px;
+      position: absolute;
+      left: 50%;
+      // top:70px;
+      top:-70px;
+      transform: translateX(-50%);
+      background-color: #495363;
+      z-index: 1000;
+      border-radius: 5px;
+      span{
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 1000;
+        color: white;
+      }
+    }
+  
+    .Login-Container {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: #f0eeee;
+  
+      .LoginBox {
+        width: 70%;
+        margin: 0 auto;
+        height: 600px;
+        position: absolute;
+        left: 50%;
+        bottom: 55%;
+        transform: translateX(-50%) translateY(50%);
+        box-shadow: 10px 10px 30px rgba(61, 61, 61, 0.355);
+  
+        .LeftBox {
+          width: 50%;
+          height: 100%;
+          display: inline-block;
+          vertical-align: top;
+          background-color: #4e5d73;
+          transition: all 1s;
+  
+          .TopTitleBox {
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 80px;
+  
+            .Title {
+              width: 100%;
+              margin: 0 auto;
+              color: white;
+              font-weight: 1000;
+              font-size: 35px;
+              position: relative;
+  
+              &::after {
+                content: "";
+                display: inline-block;
+                width: 60px;
+                height: 100%;
+                position: absolute;
+                left: -5px;
+                transform: translateX(-100%) translateY(-15%);
+                background-image: url("../../public/akj1aj.ico");
+              }
+            }
+  
+            .Role {
+              width: 100%;
+              margin-top: 30px;
+  
+              span {
+                font-size: 25px;
+                color: rgb(255, 255, 255);
+                display: block;
+  
+                &:nth-child(2) {
+                  font-size: 17px;
+                  margin-top: 5px;
+                  color: #ceced0;
+                  font-weight: 100;
+                }
+              }
+            }
+          }
+  
+          .MiddenContentBox {
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 150px;
+  
+            .Created {
+              width: 100%;
+              color: #868688;
+              font-size: 18px;
+            }
+          }
+  
+          .BottomContentBox {
+            width: 60%;
+            margin: 0 auto;
+            margin-top: 20px;
+            color: white;
+            font-weight: 1000;
+            font-size: 23px;
+  
+            &::after {
+              content: "";
+              width: 300px;
+              display: inline-block;
+              height: 0px;
+              position: absolute;
+              bottom: 40px;
+              left: 0;
+              border-bottom: 5px solid rgba(228, 228, 228, 0.145);
+            }
+          }
+        }
+  
+        .RightBox {
+          width: 49%;
+          height: 100%;
+          display: inline-block;
+          background-color: white;
+          position: relative;
+  
+          .TopTitleBox {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 80px;
+  
+            span {
+              width: 50%;
+              display: inline-block;
+  
+              &:nth-child(1) {
+                font-size: 34px;
+                font-weight: 1000;
+                color: #4e5d73;
+              }
+  
+              &:nth-child(2) {
+                text-align: right;
+                font-size: 18px;
+  
+                a {
+                  color: #4e5d73;
+                  margin-left: 5px;
+                  text-decoration: none;
+                  font-weight: 600;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+  
+          .MiddenFromBox {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 40px;
+  
+            input {
+              display: block;
+              width: 95%;
+              height: 40px;
+              border: none;
+              outline: none;
+              border: 1px solid rgb(216, 214, 214);
+              margin-top: 20px;
+              padding-left: 5%;
+              font-size: 16px;
+              transition: all 0.7s;
+              color: black;
+              font-weight: 600;
+  
+              &::-webkit-input-placeholder {
+                font-weight: 500;
+                color: #bebec3;
+              }
+  
+              &:focus {
+                color: #40597e;
+                font-size: 24px;
+              }
+            }
+          }
+  
+          .BottomButtonBox {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 120px;
+  
+            button {
+              width: 100%;
+              height: 50px;
+              background-color: #4e5d73;
+              border: none;
+              color: white;
+              font-size: 20px;
+              font-weight: 1000;
+              cursor: pointer;
+              transition: all 1s;
+  
+              &:hover {
+                background-color: rgb(42, 42, 42);
+              }
+            }
+          }
+
+          .GoToRegister_Container {
+            width: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            bottom: 50px;
+            a {
+              color: #4E5D73;
+              text-decoration: none;
+              font-weight: 1000;
+            }
+          }
+        }
+      }
+    }
+  }

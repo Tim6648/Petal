@@ -1,0 +1,390 @@
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+html .Body_Container,
+body .Body_Container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 0vw;
+}
+html .Body_Container .Left_Container,
+body .Body_Container .Left_Container {
+  width: 15%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #4E5D73;
+  position: relative;
+}
+html .Body_Container .Left_Container .Web_Title,
+body .Body_Container .Left_Container .Web_Title {
+  width: 100%;
+  height: 5.2vw;
+  line-height: 5.2vw;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 1.8vw;
+  color: white;
+}
+html .Body_Container .Left_Container .Navigation_Container,
+body .Body_Container .Left_Container .Navigation_Container {
+  width: 100%;
+}
+html .Body_Container .Left_Container .Navigation_Container li,
+body .Body_Container .Left_Container .Navigation_Container li {
+  width: 90%;
+  padding-left: 5%;
+  height: 3.9vw;
+  line-height: 3.9vw;
+  font-size: 1.1vw;
+  margin: 0.7vw auto;
+  background-color: #FFFFFF;
+  list-style-type: none;
+  font-weight: 1000;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  transition: all 0.75s;
+}
+html .Body_Container .Left_Container .Navigation_Container li:hover,
+body .Body_Container .Left_Container .Navigation_Container li:hover {
+  background-color: #2e2e2e;
+  color: white;
+}
+html .Body_Container .Left_Container .UserInfo_Container,
+body .Body_Container .Left_Container .UserInfo_Container {
+  width: 95%;
+  height: 6.5vw;
+  padding: 1vw 0vw;
+  border-radius: 1vw;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 1vw;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+html .Body_Container .Left_Container .UserInfo_Container .UserName,
+body .Body_Container .Left_Container .UserInfo_Container .UserName {
+  font-weight: 1000;
+  height: 1.6vw;
+  line-height: 1.6vw;
+  color: #181920;
+  text-align: center;
+  font-size: 1.3vw;
+}
+html .Body_Container .Left_Container .UserInfo_Container .User_Id,
+body .Body_Container .Left_Container .UserInfo_Container .User_Id {
+  width: 98%;
+  margin-top: 1.6vw;
+  color: #9e9d9d;
+  text-align: center;
+  height: 1.6vw;
+  line-height: 1.6vw;
+  font-size: 1vw;
+  font-weight: 1000;
+}
+html .Body_Container .Right_Container,
+body .Body_Container .Right_Container {
+  width: 82%;
+  padding-left: 3%;
+  height: 100%;
+  overflow-y: scroll;
+  display: inline-block;
+  background-color: #0A0A0A;
+  font-size: 0vw;
+}
+html .Body_Container .Right_Container::-webkit-scrollbar,
+body .Body_Container .Right_Container::-webkit-scrollbar {
+  overflow: hidden;
+}
+html .Body_Container .Right_Container .Images_Container,
+body .Body_Container .Right_Container .Images_Container {
+  width: 23%;
+  margin: 2vw 1%;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+html .Body_Container .Right_Container .Images_Container img,
+body .Body_Container .Right_Container .Images_Container img {
+  width: 100%;
+  height: 24.8vw;
+  border-radius: 1vw;
+  object-fit: contain;
+}
+html .Body_Container .Right_Container .Images_Container .Script,
+body .Body_Container .Right_Container .Images_Container .Script {
+  width: 100%;
+  margin: 0.7vw auto;
+  color: #F2F2F2;
+  font-size: 1vw;
+  font-weight: 1000;
+}
+html .Body_Container .Right_Container .Images_Container .UploadUserName,
+body .Body_Container .Right_Container .Images_Container .UploadUserName {
+  width: 100%;
+  margin: 0.7vw auto;
+  color: #F2F2F2;
+  font-size: 0.8vw;
+  font-weight: 1000;
+  position: relative;
+}
+html .Body_Container .Right_Container .Images_Container .UploadUserName i,
+body .Body_Container .Right_Container .Images_Container .UploadUserName i {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1vw;
+  color: white;
+}
+html .Body_Container .Right_Container .Images_Container .UploadUserName i span,
+body .Body_Container .Right_Container .Images_Container .UploadUserName i span {
+  margin-left: 0.3vw;
+  color: #fbfbfb;
+}
+html .Body_Container .PopUp_Container,
+body .Body_Container .PopUp_Container {
+  width: 60%;
+  position: absolute;
+  background-color: #0A0A0A;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 1vw;
+  display: block;
+  opacity: 0;
+  transition: all 1s;
+  overflow: hidden;
+  cursor: pointer;
+}
+html .Body_Container .PopUp_Container .PopUp_Left,
+body .Body_Container .PopUp_Container .PopUp_Left {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+html .Body_Container .PopUp_Container .PopUp_Left img,
+body .Body_Container .PopUp_Container .PopUp_Left img {
+  width: 100%;
+  height: 38.7vw;
+}
+html .Body_Container .PopUp_Container .PopUp_Right,
+body .Body_Container .PopUp_Container .PopUp_Right {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Delite_UserName,
+body .Body_Container .PopUp_Container .PopUp_Right .Delite_UserName {
+  width: 80%;
+  height: 3.9vw;
+  line-height: 3.9vw;
+  margin: 0 auto;
+  font-size: 1.3vw;
+  color: #F2F2F2;
+  font-weight: 1000;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Delite_Script,
+body .Body_Container .PopUp_Container .PopUp_Right .Delite_Script {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1vw;
+  color: white;
+  font-weight: 300;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Comments_Container,
+body .Body_Container .PopUp_Container .PopUp_Right .Comments_Container {
+  width: 95%;
+  padding: 4% 2.5%;
+  height: 55vh;
+  font-size: 0.9vw;
+  overflow-y: scroll;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Comments_Container::-webkit-scrollbar,
+body .Body_Container .PopUp_Container .PopUp_Right .Comments_Container::-webkit-scrollbar {
+  overflow: hidden;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .CommentsNumber,
+body .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .CommentsNumber {
+  border-top: 0.1vw solid #333;
+  padding-top: 1.3vw;
+  font-size: 0.9vw;
+  color: #888888;
+  font-weight: 1000;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .Commets_Delite_Container,
+body .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .Commets_Delite_Container {
+  width: 90%;
+  margin: 1vw auto;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .Commets_Delite_Container .TitleUser_Name,
+body .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .Commets_Delite_Container .TitleUser_Name {
+  font-size: 0.9vw;
+  color: #b0acac;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .Commets_Delite_Container .TitleUser_Comments,
+body .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .Commets_Delite_Container .TitleUser_Comments {
+  font-size: 0.9vw;
+  margin-top: 0.7vw;
+  color: white;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .Commets_Delite_Container .TitleUser_Date,
+body .Body_Container .PopUp_Container .PopUp_Right .Comments_Container .Commets_Delite_Container .TitleUser_Date {
+  width: 100%;
+  margin-top: 0.7vw;
+  font-size: 0.8vw;
+  color: #a0a0a0;
+  text-align: right;
+  font-weight: 300;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Control_Container,
+body .Body_Container .PopUp_Container .PopUp_Right .Control_Container {
+  width: 95%;
+  height: 2.6vw;
+  margin: 0 2.5%;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Left_Container,
+body .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Left_Container {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Left_Container input,
+body .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Left_Container input {
+  width: 100%;
+  padding-left: 2%;
+  height: 100%;
+  background-color: #1B1B1B;
+  border-radius: 0.7vw;
+  color: white;
+  outline: none;
+  border: none;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Right_Container,
+body .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Right_Container {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Right_Container i,
+body .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Right_Container i {
+  position: relative;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1vw;
+  color: white;
+}
+html .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Right_Container i span,
+body .Body_Container .PopUp_Container .PopUp_Right .Control_Container .Control_Right_Container i span {
+  margin-left: 0.3vw;
+  color: #fbfbfb;
+}
+html .Body_Container .UploadAnImage_Container,
+body .Body_Container .UploadAnImage_Container {
+  width: 1152px;
+  height: 80vh;
+  position: absolute;
+  background-color: #00000097;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 1vw;
+  font-size: 0vw;
+  display: none;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Left_Container,
+body .Body_Container .UploadAnImage_Container .Upload_Left_Container {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  text-align: center;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Left_Container .Add_Icon_Container,
+body .Body_Container .UploadAnImage_Container .Upload_Left_Container .Add_Icon_Container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  cursor: pointer;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Left_Container .Add_Icon_Container #UploadFileInput,
+body .Body_Container .UploadAnImage_Container .Upload_Left_Container .Add_Icon_Container #UploadFileInput {
+  display: none;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Left_Container .Add_Icon_Container i,
+body .Body_Container .UploadAnImage_Container .Upload_Left_Container .Add_Icon_Container i {
+  font-size: 3.9vw;
+  color: white;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Left_Container img,
+body .Body_Container .UploadAnImage_Container .Upload_Left_Container img {
+  width: 90%;
+  height: 100%;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Right_Container,
+body .Body_Container .UploadAnImage_Container .Upload_Right_Container {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Right_Container .Text,
+body .Body_Container .UploadAnImage_Container .Upload_Right_Container .Text {
+  width: 100%;
+  height: 6.5vw;
+  line-height: 6.5vw;
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 1000;
+  text-align: left;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Right_Container textarea,
+body .Body_Container .UploadAnImage_Container .Upload_Right_Container textarea {
+  width: 85%;
+  padding: 2% 2.5%;
+  height: 6.5vw !important;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  letter-spacing: 0vw;
+  background-color: #181818;
+  color: white;
+  font-size: 1.2vw;
+  resize: none;
+  border-radius: 1vw;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Right_Container .RedayButton_Container,
+body .Body_Container .UploadAnImage_Container .Upload_Right_Container .RedayButton_Container {
+  width: 85%;
+  padding: 2% 2.5%;
+  height: 2vw;
+  position: absolute;
+  bottom: 2.6vw;
+  line-height: 2vw;
+  color: white;
+  font-weight: 1000;
+  font-size: 1.3vw;
+  text-align: center;
+  border-radius: 0.7vw;
+  background-color: #4E5D73;
+  cursor: pointer;
+  transition: all 1s;
+}
+html .Body_Container .UploadAnImage_Container .Upload_Right_Container .RedayButton_Container:hover,
+body .Body_Container .UploadAnImage_Container .Upload_Right_Container .RedayButton_Container:hover {
+  background-color: #0A0A0A;
+}
